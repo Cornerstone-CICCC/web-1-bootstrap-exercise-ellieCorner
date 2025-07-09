@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Exercise</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyWebsite</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-light text-center">
+      <div class="container">
+        <h1 class="display-4">Welcome to My Website</h1>
+        <p class="lead">
+          This is a simple, responsive site built using Bootstrap 5.
+        </p>
+      </div>
+    </section>
+
+    <!-- Card Section -->
+    <section id="about" class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1751755359997-40f4fb2293cd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8"
+              class="card-img-top"
+              alt="Card 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 1</h5>
+              <p class="card-text">
+                This is a short description of the first card.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1751891022621-21a479774975?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="Card 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 2</h5>
+              <p class="card-text">
+                This is a short description of the second card.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1749243274780-1f3ef5488ee7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2Mnx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="Card 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 3</h5>
+              <p class="card-text">
+                This is a short description of the third card.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="container my-5">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailInput"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="nameInput" class="form-label">Your Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nameInput"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="subscribeCheck" />
+          <label class="form-check-label" for="subscribeCheck"
+            >Subscribe to newsletter</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4">
+            <h5 class="text-uppercase">Footer Content</h5>
+            <p>
+              Here you can use rows and columns to organize your footer content.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#!" class="text-dark">Link 1</a></li>
+              <li><a href="#!" class="text-dark">Link 2</a></li>
+              <li><a href="#!" class="text-dark">Link 3</a></li>
+              <li><a href="#!" class="text-dark">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#!" class="text-dark">Link 1</a></li>
+              <li><a href="#!" class="text-dark">Link 2</a></li>
+              <li><a href="#!" class="text-dark">Link 3</a></li>
+              <li><a href="#!" class="text-dark">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2025 Your Company
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
